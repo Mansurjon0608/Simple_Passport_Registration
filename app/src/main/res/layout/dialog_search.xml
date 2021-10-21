@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_margin="3dp"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/search_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fuqaroning_ismi"
+        android:inputType="textCapWords"
+        android:textStyle="italic"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fuqaroning_familiyasi"
+        android:textStyle="italic"
+        android:inputType="textCapWords"
+        android:id="@+id/search_familiya"
+        />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qidirish"
+        android:backgroundTint="@color/kok"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

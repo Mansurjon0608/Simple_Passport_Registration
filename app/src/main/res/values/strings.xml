@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PasportRegister</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fuqaroning_ma_lumotlarini_qo_shish">Fuqaroning ma\'lumotlarini qo\'shish</string>
+    <string name="fuqaroning_ismi">Fuqaroning ismi</string>
+    <string name="fuqaroning_familiyasi">Fuqaroning familiyasi</string>
+    <string name="otasining_ismi">Otasining ismi</string>
+    <string name="shahar_tuman">Shahar, tuman</string>
+    <string name="uyining_manzili">Uyining manzili</string>
+    <string name="pasport_olgan_vaqti">Pasport olgan vaqti</string>
+    <string name="pasport_muddati">Pasport muddati</string>
+    <string name="fuqaroning_rasmi_3x4">Fuqaroning rasmi 3x4</string>
+    <string name="saqlash">Saqlash</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>
