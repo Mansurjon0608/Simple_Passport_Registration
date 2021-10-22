@@ -22,8 +22,6 @@ import java.io.FileOutputStream
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
-
-
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
@@ -68,7 +66,7 @@ class AddFragment : Fragment() {
             fuqaro.jinsi = binding.spinnerJinsi.selectedItemPosition
             fuqaro.imagePath = absolutePath
 
-            if (fuqaro.name != "" && fuqaro.lastName != "" && absolutePath != "" && binding.spinnerViloyatlar.selectedItemPosition!=0 && binding.spinnerJinsi.selectedItemPosition!=0) {
+            if (fuqaro.name != "" && fuqaro.lastName != "" && absolutePath != "" && binding.spinnerViloyatlar.selectedItemPosition != 0 && binding.spinnerJinsi.selectedItemPosition != 0) {
                 val alertDialog = AlertDialog.Builder(binding.root.context, R.style.NewDialog)
                 val itemDialog = DialogTasdiqlashBinding.inflate(LayoutInflater.from(context))
                 val dialog = alertDialog.create()
@@ -88,7 +86,11 @@ class AddFragment : Fragment() {
 
 
             } else {
-                Toast.makeText(context, "Ma'lumotlar yetarli emas, avval ma'lumotlarni to'ldiring...", Toast.LENGTH_SHORT)
+                Toast.makeText(
+                    context,
+                    "Ma'lumotlar yetarli emas, avval ma'lumotlarni to'ldiring...",
+                    Toast.LENGTH_SHORT
+                )
                     .show()
             }
 
@@ -100,8 +102,9 @@ class AddFragment : Fragment() {
 //            listSeriya.add(fuqaro.passportSeriya!!)
 //
 //        }
+        }
 
-            binding.image.setOnClickListener {
+        binding.image.setOnClickListener {
                 askPermission(Manifest.permission.READ_EXTERNAL_STORAGE) {
                     getImageContent.launch("image/*")
                 }.onDeclined { e ->
@@ -126,9 +129,7 @@ class AddFragment : Fragment() {
                 }
             }
 
-
-
-            binding.btnBack.setOnClickListener {
+        binding.btnBack.setOnClickListener {
                 if (binding.editName.text.toString() != "" && binding.editSurname.text.toString() != "") {
                     val dialog = android.app.AlertDialog.Builder(context)
                     dialog.setTitle("ATTENTION !")
@@ -150,7 +151,7 @@ class AddFragment : Fragment() {
                     findNavController().popBackStack()
                 }
             }
-        }
+
 
         return binding.root
     }
