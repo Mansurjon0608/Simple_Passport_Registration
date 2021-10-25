@@ -4,6 +4,7 @@ import Adapter.RvAdapter
 import Adapter.RvOnClick
 import DB.AppDatabase
 import Models.Fuqaro
+import Models.MyObject
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.os.Bundle
@@ -34,6 +35,10 @@ class ListFragment : Fragment() {
     private var param2: String? = null
 
 
+    override fun onStart() {
+        super.onStart()
+        MyObject.isHome = false
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

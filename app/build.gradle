@@ -9,6 +9,7 @@ android {
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
     compileSdk 30
+
     buildToolsVersion "30.0.3"
     buildFeatures{
         viewBinding true

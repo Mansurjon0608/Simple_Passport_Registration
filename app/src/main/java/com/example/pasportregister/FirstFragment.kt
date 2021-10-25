@@ -46,9 +46,9 @@ class FirstFragment : Fragment() {
 
        binding = FragmentFirstBinding.inflate(LayoutInflater.from(context))
 
-        binding.root.setOnClickListener {
-            findNavController().navigate(R.id.homeFragment)
-        }
+//        binding.root.setOnClickListener {
+//            findNavController().navigate(R.id.homeFragment)
+//        }
         return binding.root
     }
 

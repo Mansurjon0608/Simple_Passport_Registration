@@ -2,6 +2,7 @@ package com.example.pasportregister
 
 import DB.AppDatabase
 import Models.Fuqaro
+import Models.MyObject
 import android.Manifest
 import android.net.Uri
 import android.os.Bundle
@@ -31,7 +32,10 @@ class AddFragment : Fragment() {
     lateinit var appDatabase: AppDatabase
     private var param1: String? = null
     private var param2: String? = null
-
+    override fun onStart() {
+        super.onStart()
+        MyObject.isHome = false
+    }
 
     override fun onResume() {
         super.onResume()
